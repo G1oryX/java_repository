@@ -25,7 +25,6 @@ public class Dao<T extends java.io.Serializable> {
         }
 
         //反射获取实体类信息，并通过注解确定表信息
-        System.out.println("sfkuj");
         modelFields = classInfo.getDeclaredFields();
         String modelFieldName,tableFieldName;
         tableFieldList=new ArrayList<String>(modelFields.length);
